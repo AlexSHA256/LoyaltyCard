@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+</head>
+<body>
+
+<h1>card list:</h1>
+
+{% for card in card_list %}
+    <li><a href="/cards/{{ card.series }}/{{ card.numb }}">{{ card.series }} {{card.numb}}</a></li>
+{% endfor %}
+
+</body>
+</html>

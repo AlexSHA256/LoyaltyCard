@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>about</title>
+</head>
+<body>
+
+<h3>Card: {{ card.series }} {{card.numb}}</h3>
+<h4>List of purchase:</h4>
+
+{% for a in card.purchase_set.all %}
+
+    {{a.money}} = {{a.choice_text}} <br>
+
+{% endfor %}
+
+</body>
+</html>
